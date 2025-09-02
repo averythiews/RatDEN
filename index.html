@@ -10,17 +10,18 @@
     <title>Welcome to the Rat Den</title>
 </head>
 <body class="vt323-regular">
-    <div class="info">
-        <ul>Current Commands:
-        <li>ls - For looking up what files/connections are available</li>
-        <li>cd [file name] - Sends you into the files/connections</li>
-        <li>cd .. - Will send you back the way you came</li>
-        </ul>
-    </div>
-    <div class="window">
-        <ul class="result">
+    <div class="container">
 
-            <li>Welcome to the</li>
+        <div class="info">
+            <ul>Current Commands:
+            <li>ls - For looking up what files/connections are available</li>
+            <li>cd [file name] - Sends you into the files/connections</li>
+            <li>cd .. - Will send you back the way you came</li>
+            </ul>
+        </div>
+        <div class="window">
+            <ul class="result">
+                <li>Welcome to the</li>
                     <pre>
                         ▄████████    ▄████████     ███          ████████▄     ▄████████ ███▄▄▄▄  
                         ███    ███   ███    ███ ▀█████████▄      ███   ▀███   ███    ███ ███▀▀▀██▄
@@ -32,18 +33,18 @@
                         ███    ███   ███    █▀     ▄████▀        ████████▀    ██████████  ▀█   █▀ 
                         ███    ███  
                     </pre>
-            <li>This shit works like any ordinary terminal system but with basically none of the functions</li>
-            <li>Right now we only have a limited connection to the GPI database. Even janitors have more access than we do.</li>
-            <li>I'll be knocking and digging around in their walls soon enough though. Same with those other fuckheads.</li>
-            <li>You can thank me later</li>
+            <p>Works like any ordinary terminal system but with a bunch of the functions removed (People would fuck em up)</p>
+            <p>Right now we only have a limited connection to the GPI database. Even janitors probably have more access than we do. I'll be knocking and digging around in their walls soon enough though.</p>
+            <p>You can thank me later</p>
 
         </ul>
       
         <div class="command-area">
-          <label for="command-input">$</label>
+          <label for="command-input"></label>
           <input type="text" id="command-input" class="command" placeholder="" />
         </div>
       </div>
+    </div>
     <script>
         window.onload=function(){
             document.body.style.zoom="80%"

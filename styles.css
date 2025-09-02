@@ -1,17 +1,26 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  min-height: 100%;
+    min-height: 100%;
 }
 
 .vt323-regular {
     font-family: "VT323";
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 15px;
+    
+}
 
 body {
     font-size: larger;
@@ -20,44 +29,33 @@ body {
     padding: 2em;
 }
 
-body p{
+body p {
     margin: 0;
 }
 
-.info{
-    width: 500px;
-    height: 50px;
-    margin: auto;
+.info {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
 }
 
 .window {
-  background: #000000;
-  outline: 1px solid white;
-  border-radius: 0.5em;
-  box-shadow: 0 0.75em 3em #000000;
-  margin: 3em auto;
-  max-width: 70em;
-  min-height: 40em;
-  padding-right: 4px;
-  overflow: hidden;
-  position: relative;
-}
-.window::before {
-  background: linear-gradient(#000000 38%, rgba(42, 37, 88, 0));
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 2em;
-  z-index: 100;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: #000000;
+    outline: 1px solid white;
+    border-radius: 0.5em;
+    box-shadow: 0 0.75em 3em #000000;
+    overflow: hidden;
 }
 
 .result {
-  margin: 0;
-  padding: 2em 2em 1em;
-  height: 36em;
-  overflow-y: auto;
+    margin: 0;
+    padding: 2em 2em 1em;
+    height: 36em;
+    overflow-y: auto;
 }
 
 ul {
@@ -65,90 +63,96 @@ ul {
 }
 
 .path {
-  color: yellow;
+    color: yellow;
 }
 
 .result li.ready {
-  -webkit-animation: none;
-          animation: none;
-  font-style: italic;
-  margin-top: -0.5em;
-  margin-bottom: 0.5em;
-  transform: none;
-  opacity: 0.5;
+    -webkit-animation: none;
+    animation: none;
+    font-style: italic;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+    transform: none;
+    opacity: 0.5;
 }
 
 @-webkit-keyframes appear {
-  100% {
-    transform: none;
-    opacity: 1;
-  }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
 }
 
 @keyframes appear {
-  100% {
-    transform: none;
-    opacity: 1;
-  }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
 }
+
 .result li:nth-child(odd) {
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-  color: white;
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+    color: white;
 }
+
 .result::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
+
 .result::-webkit-scrollbar-thumb {
-  background: white;
-  border-radius: 10px;
+    background: white;
+    border-radius: 10px;
 }
 
 .command-area {
-  background: #000000;
-  color: green;
-  padding: 1em;
-  position: absolute;
-  width: 100%;
+    background: #000000;
+    color: green;
+    width: 100%;
+    margin: auto;
 }
 
 label {
-  line-height: 2em;
-  float: left;
-  width: 4%;
+    line-height: 2em;
+    float: left;
+    width: 4%;
 }
 
 input {
-  background: black;
-  border: 0;
-  color: inherit;
-  float: left;
-  font: inherit;
-  transition: 0.5s;
-  outline: 1px solid green;
-  padding: 0.25em 0.5em;
-  width: 96%;
-}
-input:focus {
-  outline: 1px solid lightgreen;
-}
-input::-moz-placeholder {
-  color: inherit;
-  font-style: italic;
-}
-input:-ms-input-placeholder {
-  color: inherit;
-  font-style: italic;
-}
-input::placeholder {
-  color: inherit;
-  font-style: italic;
+    background: black;
+    border: 0;
+    color: inherit;
+    float: left;
+    font: inherit;
+    transition: 0.5s;
+    outline: 1px solid green;
+    padding: 0.25em 0.5em;
+    width: 100%;
 }
 
-#error{
+input:focus {
+    outline: 1px solid lightgreen;
+}
+
+input::-moz-placeholder {
+    color: inherit;
+    font-style: italic;
+}
+
+input:-ms-input-placeholder {
+    color: inherit;
+    font-style: italic;
+}
+
+input::placeholder {
+    color: inherit;
+    font-style: italic;
+}
+
+#error {
     color: red;
 }
 
-#movement{
+#movement {
     color: orange;
 }
