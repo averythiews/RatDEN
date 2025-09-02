@@ -148,3 +148,7 @@ input::placeholder {
 #error{
     color: red;
 }
+
+#movement{
+    color: orange;
+}
