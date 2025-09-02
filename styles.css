@@ -24,12 +24,18 @@ body p{
     margin: 0;
 }
 
+.info{
+    width: 500px;
+    height: 50px;
+    margin: auto;
+}
+
 .window {
   background: #000000;
   outline: 1px solid white;
   border-radius: 0.5em;
   box-shadow: 0 0.75em 3em #000000;
-  margin: 2em auto;
+  margin: 3em auto;
   max-width: 70em;
   min-height: 40em;
   padding-right: 4px;

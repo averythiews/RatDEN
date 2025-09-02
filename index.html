@@ -7,9 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Welcome to the Rat Den</title>
 </head>
 <body class="vt323-regular">
+    <div class="info">
+        <ul>Current Commands:
+        <li>ls - For looking up what files/connections are available</li>
+        <li>cd [file name] - Sends you into the files/connections</li>
+        <li>cd .. - Will send you back the way you came</li>
+        </ul>
+    </div>
     <div class="window">
         <ul class="result">
 
@@ -25,7 +32,7 @@
                         ███    ███   ███    █▀     ▄████▀        ████████▀    ██████████  ▀█   █▀ 
                         ███    ███  
                     </pre>
-            <li>This shit works like any ordinary terminal system but with all the crazy shit filed off.</li>
+            <li>This shit works like any ordinary terminal system but with basically none of the functions</li>
             <li>Right now we only have a limited connection to the GPI database. Even janitors have more access than we do.</li>
             <li>I'll be knocking and digging around in their walls soon enough though. Same with those other fuckheads.</li>
             <li>You can thank me later</li>
@@ -37,6 +44,7 @@
           <input type="text" id="command-input" class="command" placeholder="" />
         </div>
       </div>
+
     <script src="CLI.js"></script>
 </body>
 </html>
