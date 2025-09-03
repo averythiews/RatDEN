@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROC CAFE | MENU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker:wght@400&family=Courier+Prime:wght@400;700&display=swap');
+        .zine-font { font-family: 'Permanent Marker', cursive; }
+        .mono-font { font-family: 'Courier Prime', monospace; }
+        .punk-border { border: 3px solid #000; box-shadow: 4px 4px 0px #000; }
+        .zine-bg { background: linear-gradient(45deg, transparent 40%, rgba(0,0,0,0.1) 41%, rgba(0,0,0,0.1) 59%, transparent 60%), linear-gradient(-45deg, transparent 40%, rgba(0,0,0,0.05) 41%, rgba(0,0,0,0.05) 59%, transparent 60%); }
+        .nav-active { background-color: #F97316; color: #000; }
+        .nav-active-arrow { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #F97316; }
+    </style>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Header -->
+    <header class="relative border-b-4 border-black bg-white overflow-hidden">
+        <div class="absolute inset-0 zine-bg opacity-30"></div>
+        <div class="relative max-w-6xl mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <a href="Index.html" class="group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-black flex items-center justify-center transform rotate-3 group-hover:rotate-6 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+                        </div>
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold zine-font text-black transform -rotate-1">ROC CAFE</h1>
+                            <p class="text-sm mono-font text-gray-600 transform rotate-1">MARBLE BASIN • N. CASCADES</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="punk-border bg-yellow-300 px-3 py-1 transform rotate-2 hidden md:block">
+                    <p class="mono-font text-xs font-bold">COFFEE • TRAILS • COMMUNITY</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-black text-white sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center md:justify-start gap-0">
+                <a href="Index.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Home
+                </a>
+                <a href="Menu.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors nav-active">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+                    Menu
+                    <div class="nav-active-arrow"></div>
+                </a>
+                <a href="Trails.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                    Trails
+                </a>
+                <a href="About.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    About
+                </a>
+                <a href="Contact.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center mb-12">
+              <div class="punk-border bg-red-600 text-white inline-block px-4 py-2 mb-4 transform -rotate-2">
+                <span class="mono-font text-sm font-bold">FUEL STATION</span>
+              </div>
+              <h1 class="text-4xl md:text-6xl zine-font mb-4 transform rotate-1">
+                MENU
+              </h1>
+              <p class="mono-font text-gray-600 max-w-2xl mx-auto">
+                Honest pricing for quality coffee & food. 
+                No corporate markup, just good stuff made with care.
+              </p>
+            </div>
+    
+            <!-- Menu Categories -->
+            <div class="space-y-16">
+              <!-- Category 1: COFFEE HITS -->
+              <div class="relative">
+                <div class="flex items-center gap-4 mb-8">
+                  <div class="w-16 h-16 bg-black flex items-center justify-center punk-border transform rotate-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+                  </div>
+                  <div>
+                    <h2 class="text-2xl md:text-3xl zine-font transform -rotate-1">COFFEE HITS</h2>
+                    <p class="mono-font text-sm text-gray-500 mt-1">THE FUEL FOR YOUR ADVENTURES</p>
+                  </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div class="punk-border bg-gray-50 p-6 hover:bg-yellow-50 transition-colors transform rotate-1 hover:scale-105 hover:rotate-0 transition-all duration-200">
+                    <div class="flex justify-between items-start mb-2"><h3 class="mono-font font-bold text-lg">DRIP COFFEE</h3><span class="zine-font text-xl text-orange-500">$2.50</span></div>
+                    <p class="mono-font text-sm text-gray-600">House blend • Dark & bold • Endless refills</p>
+                  </div>
+                  <div class="punk-border bg-gray-50 p-6 hover:bg-yellow-50 transition-colors transform -rotate-1 hover:scale-105 hover:rotate-0 transition-all duration-200">
+                    <div class="flex justify-between items-start mb-2"><h3 class="mono-font font-bold text-lg">AMERICANO</h3><span class="zine-font text-xl text-orange-500">$3.00</span></div>
+                    <p class="mono-font text-sm text-gray-600">Double shot espresso • Clean finish</p>
+                  </div>
+                  <div class="punk-border bg-gray-50 p-6 hover:bg-yellow-50 transition-colors transform rotate-0 hover:scale-105 hover:rotate-0 transition-all duration-200">
+                    <div class="flex justify-between items-start mb-2"><h3 class="mono-font font-bold text-lg">CAPPUCCINO</h3><span class="zine-font text-xl text-orange-500">$3.50</span></div>
+                    <p class="mono-font text-sm text-gray-600">Perfect foam art • Creamy texture</p>
+                  </div>
+                  <div class="punk-border bg-gray-50 p-6 hover:bg-yellow-50 transition-colors transform rotate-1 hover:scale-105 hover:rotate-0 transition-all duration-200">
+                    <div class="flex justify-between items-start mb-2"><h3 class="mono-font font-bold text-lg">LATTE</h3><span class="zine-font text-xl text-orange-500">$4.00</span></div>
+                    <p class="mono-font text-sm text-gray-600">Smooth & milky • Oat milk +$0.50</p>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Category 2: COLD BREW CREW -->
+              <div class="relative">
+                <div class="flex items-center gap-4 mb-8">
+                  <div class="w-16 h-16 bg-black flex items-center justify-center punk-border transform -rotate-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  </div>
+                  <div>
+                    <h2 class="text-2xl md:text-3xl zine-font transform -rotate-1">COLD BREW CREW</h2>
+                    <p class="mono-font text-sm text-gray-500 mt-1">ICED PERFECTION FOR WARM DAYS</p>
+                  </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="punk-border bg-gray-50 p-6 hover:bg-yellow-50 transition-colors transform -rotate-1 hover:scale-105 hover:rotate-0 transition-all duration-200">
+                        <div class="flex justify-between items-start mb-2"><h3 class="mono-font font-bold text-lg">COLD BREW</h3><span class="zine-font text-xl text-orange-500">$3.25</span></div>
+                        <p class="mono-font text-sm text-gray-600">16 hour steep • Smooth & strong</p>
+                    </div>
+                    <div class="punk-border bg-gray-50 p-6 hover:bg-yellow-50 transition-colors transform rotate-0 hover:scale-105 hover:rotate-0 transition-all duration-200">
+                        <div class="flex justify-between items-start mb-2"><h3 class="mono-font font-bold text-lg">ICED AMERICANO</h3><span class="zine-font text-xl text-orange-500">$3.25</span></div>
+                        <p class="mono-font text-sm text-gray-600">Double shot over ice • Clean & crisp</p>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Category 3: MOUNTAIN FUEL -->
+               <div class="relative">
+                <div class="flex items-center gap-4 mb-8">
+                  <div class="w-16 h-16 bg-black flex items-center justify-center punk-border transform rotate-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                  </div>
+                  <div>
+                    <h2 class="text-2xl md:text-3xl zine-font transform -rotate-1">MOUNTAIN FUEL</h2>
+                    <p class="mono-font text-sm text-gray-500 mt-1">FOOD FOR THE TRAIL & SOUL</p>
+                  </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="punk-border bg-gray-50 p-6 hover:bg-yellow-50 transition-colors transform rotate-0 hover:scale-105 hover:rotate-0 transition-all duration-200">
+                        <div class="flex justify-between items-start mb-2"><h3 class="mono-font font-bold text-lg">BREAKFAST BURRITO</h3><span class="zine-font text-xl text-orange-500">$6.50</span></div>
+                        <p class="mono-font text-sm text-gray-600">Scrambled eggs • Hash browns • Cheese • Salsa</p>
+                    </div>
+                    <div class="punk-border bg-gray-50 p-6 hover:bg-yellow-50 transition-colors transform rotate-1 hover:scale-105 hover:rotate-0 transition-all duration-200">
+                        <div class="flex justify-between items-start mb-2"><h3 class="mono-font font-bold text-lg">BAGEL & CREAM CHEESE</h3><span class="zine-font text-xl text-orange-500">$3.00</span></div>
+                        <p class="mono-font text-sm text-gray-600">Fresh daily • Plain or everything</p>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Category 4: COMFORT ZONE -->
+               <div class="relative">
+                <div class="flex items-center gap-4 mb-8">
+                  <div class="w-16 h-16 bg-black flex items-center justify-center punk-border transform -rotate-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  </div>
+                  <div>
+                    <h2 class="text-2xl md:text-3xl zine-font transform -rotate-1">COMFORT ZONE</h2>
+                    <p class="mono-font text-sm text-gray-500 mt-1">FOR WHEN YOU NEED SOMETHING WARM</p>
+                  </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="punk-border bg-gray-50 p-6 hover:bg-yellow-50 transition-colors transform -rotate-1 hover:scale-105 hover:rotate-0 transition-all duration-200">
+                        <div class="flex justify-between items-start mb-2"><h3 class="mono-font font-bold text-lg">HOT CHOCOLATE</h3><span class="zine-font text-xl text-orange-500">$3.50</span></div>
+                        <p class="mono-font text-sm text-gray-600">Real chocolate • Marshmallows • Kids love it</p>
+                    </div>
+                    <div class="punk-border bg-gray-50 p-6 hover:bg-yellow-50 transition-colors transform rotate-0 hover:scale-105 hover:rotate-0 transition-all duration-200">
+                        <div class="flex justify-between items-start mb-2"><h3 class="mono-font font-bold text-lg">CHAI LATTE</h3><span class="zine-font text-xl text-orange-500">$4.00</span></div>
+                        <p class="mono-font text-sm text-gray-600">Spiced tea • Steamed milk • Cinnamon dust</p>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+    
+            <!-- Special Notes -->
+            <div class="mt-16 punk-border bg-black text-white p-8 transform rotate-1">
+              <div class="text-center">
+                <h3 class="zine-font text-2xl mb-4 text-orange-500">SPECIAL NOTES</h3>
+                <div class="grid md:grid-cols-2 gap-6 mono-font text-sm">
+                  <div>
+                    <h4 class="font-bold mb-2">DIETARY OPTIONS</h4>
+                    <p>• Oat, almond, soy milk available</p>
+                    <p>• Gluten-free options marked on request</p>
+                    <p>• Vegan pastries on weekends</p>
+                  </div>
+                  <div>
+                    <h4 class="font-bold mb-2">LOYALTY PROGRAM</h4>
+                    <p>• Buy 10 coffees, get 1 free</p>
+                    <p>• Trail condition updates included</p>
+                    <p>• 15% off for local climbers & hikers</p>
+                  </div>
+                </div>
+                <div class="mt-6 punk-border bg-yellow-300 text-black inline-block px-4 py-2 transform -rotate-2">
+                  <p class="font-bold">CASH & CARD ACCEPTED • NO VENMO DRAMA</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white border-t-4 border-orange-500 mt-12">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-6 text-center md:text-left">
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">HOURS</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>MON-FRI: 6AM-6PM</p>
+                        <p>SAT-SUN: 7AM-7PM</p>
+                        <p class="text-gray-400">CLOSED: MAJOR STORMS</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">LOCATION</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>123 GRANITE ROAD</p>
+                        <p>MARBLE BASIN, WA</p>
+                        <p class="text-gray-400">MILE 47 ON CASCADE HWY</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">VIBE</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>LOCAL • PUNK • CAFFEINATED</p>
+                        <p>TRAIL MAPS AVAILABLE</p>
+                        <p class="text-gray-400">EST. 2019</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-gray-600 text-center mono-font text-xs text-gray-400">
+                © 2024 ROC CAFE • FUELED BY MOUNTAINS & COFFEE
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

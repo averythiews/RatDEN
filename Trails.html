@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROC CAFE | TRAILS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker:wght@400&family=Courier+Prime:wght@400;700&display=swap');
+        .zine-font { font-family: 'Permanent Marker', cursive; }
+        .mono-font { font-family: 'Courier Prime', monospace; }
+        .punk-border { border: 3px solid #000; box-shadow: 4px 4px 0px #000; }
+        .zine-bg { background: linear-gradient(45deg, transparent 40%, rgba(0,0,0,0.1) 41%, rgba(0,0,0,0.1) 59%, transparent 60%), linear-gradient(-45deg, transparent 40%, rgba(0,0,0,0.05) 41%, rgba(0,0,0,0.05) 59%, transparent 60%); }
+        .nav-active { background-color: #F97316; color: #000; }
+        .nav-active-arrow { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #F97316; }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <header class="relative border-b-4 border-black bg-white overflow-hidden">
+        <div class="absolute inset-0 zine-bg opacity-30"></div>
+        <div class="relative max-w-6xl mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <a href="Index.html" class="group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-black flex items-center justify-center transform rotate-3 group-hover:rotate-6 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+                        </div>
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold zine-font text-black transform -rotate-1">ROC CAFE</h1>
+                            <p class="text-sm mono-font text-gray-600 transform rotate-1">MARBLE BASIN • N. CASCADES</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="punk-border bg-yellow-300 px-3 py-1 transform rotate-2 hidden md:block">
+                    <p class="mono-font text-xs font-bold">COFFEE • TRAILS • COMMUNITY</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-black text-white sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center md:justify-start gap-0">
+                <a href="Index.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Home
+                </a>
+                <a href="Menu.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+                    Menu
+                </a>
+                <a href="Trails.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors nav-active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                    Trails
+                    <div class="nav-active-arrow"></div>
+                </a>
+                <a href="About.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    About
+                </a>
+                <a href="Contact.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="py-12">
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <div class="punk-border bg-green-600 text-white inline-block px-4 py-2 mb-4 transform rotate-2">
+            <span class="mono-font text-sm font-bold">TRAIL GUIDE</span>
+          </div>
+          <h1 class="text-4xl md:text-6xl zine-font mb-4 transform -rotate-1">
+            LOCAL TRAILS
+          </h1>
+          <p class="mono-font text-gray-600 max-w-2xl mx-auto">
+            Honest beta on the best hikes around Marble Basin. 
+            Current conditions updated by locals who actually hike these trails.
+          </p>
+        </div>
+
+        <!-- Trail Conditions Alert -->
+        <div class="punk-border bg-black text-white p-6 mb-12 transform rotate-1">
+          <div class="flex items-center gap-3 mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500"><path d="m21.73 18-8-14a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
+            <h2 class="zine-font text-xl text-orange-500">CURRENT CONDITIONS</h2>
+          </div>
+          <div class="mono-font text-sm grid md:grid-cols-2 gap-4">
+            <div>
+              <p><strong>WEATHER:</strong> Partly cloudy, 42°F</p>
+              <p><strong>SNOW LINE:</strong> 4,200 ft elevation</p>
+            </div>
+            <div>
+              <p><strong>DAYLIGHT:</strong> 7:15 AM - 6:30 PM</p>
+              <p><strong>UPDATED:</strong> Today 7:30 AM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trails Grid -->
+        <div class="grid lg:grid-cols-2 gap-8">
+          <!-- Trail Card: BLUE LAKE TRAIL -->
+          <div class="punk-border bg-white p-6 transform transition-all duration-200 hover:scale-105 rotate-1 hover:rotate-0">
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="zine-font text-xl mb-1 transform -rotate-1">BLUE LAKE TRAIL</h3>
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <span class="mono-font text-xs font-bold">MODERATE</span>
+                </div>
+              </div>
+              <div class="punk-border px-3 py-1 bg-green-100 text-green-800 border-green-200">
+                <span class="mono-font text-xs font-bold">OPEN</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mb-4 mono-font text-xs">
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><p class="font-bold">7.2 MILES</p></div>
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><line x1="12" x2="12" y1="20" y2="4"/><polyline points="6 14 12 20 18 14"/></svg><p class="font-bold">1,800 FT</p></div>
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><p class="font-bold">4-5 HOURS</p></div>
+            </div>
+            <p class="mono-font text-sm text-gray-600 mb-3">Classic North Cascades lake with stunning alpine views. Well-maintained trail with moderate elevation gain.</p>
+            <div class="bg-gray-100 p-3 rounded mb-4"><h4 class="mono-font text-xs font-bold text-gray-700 mb-1">CURRENT CONDITIONS:</h4><p class="mono-font text-xs text-gray-600">Trail clear, some snow patches above 5,000 ft</p></div>
+            <a href="https://www.alltrails.com/trail/us/washington/blue-lake-trail" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 punk-border bg-orange-500 text-black px-4 py-2 mono-font text-xs font-bold hover:bg-orange-400 transition-colors transform hover:rotate-1">VIEW ON ALLTRAILS <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></a>
+          </div>
+
+          <!-- Trail Card: CASCADE PASS -->
+          <div class="punk-border bg-white p-6 transform transition-all duration-200 hover:scale-105 -rotate-1 hover:rotate-0">
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="zine-font text-xl mb-1 transform -rotate-1">CASCADE PASS</h3>
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <span class="mono-font text-xs font-bold">MODERATE</span>
+                </div>
+              </div>
+              <div class="punk-border px-3 py-1 bg-yellow-100 text-yellow-800 border-yellow-200">
+                <span class="mono-font text-xs font-bold">CAUTION</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mb-4 mono-font text-xs">
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><p class="font-bold">7.4 MILES</p></div>
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><line x1="12" x2="12" y1="20" y2="4"/><polyline points="6 14 12 20 18 14"/></svg><p class="font-bold">1,900 FT</p></div>
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><p class="font-bold">4-6 HOURS</p></div>
+            </div>
+            <p class="mono-font text-sm text-gray-600 mb-3">Historic pass with incredible mountain panoramas. Can be crowded on weekends.</p>
+            <div class="bg-gray-100 p-3 rounded mb-4"><h4 class="mono-font text-xs font-bold text-gray-700 mb-1">CURRENT CONDITIONS:</h4><p class="mono-font text-xs text-gray-600">Icy conditions early morning, microspikes recommended</p></div>
+            <a href="https://www.alltrails.com/trail/us/washington/cascade-pass-trail" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 punk-border bg-orange-500 text-black px-4 py-2 mono-font text-xs font-bold hover:bg-orange-400 transition-colors transform hover:rotate-1">VIEW ON ALLTRAILS <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></a>
+          </div>
+
+          <!-- Trail Card: SAHALE ARM -->
+          <div class="punk-border bg-white p-6 transform transition-all duration-200 hover:scale-105 rotate-0 hover:rotate-0">
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="zine-font text-xl mb-1 transform -rotate-1">SAHALE ARM</h3>
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                  <span class="mono-font text-xs font-bold">HARD</span>
+                </div>
+              </div>
+              <div class="punk-border px-3 py-1 bg-red-100 text-red-800 border-red-200">
+                <span class="mono-font text-xs font-bold">ADVANCED</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mb-4 mono-font text-xs">
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><p class="font-bold">12.0 MILES</p></div>
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><line x1="12" x2="12" y1="20" y2="4"/><polyline points="6 14 12 20 18 14"/></svg><p class="font-bold">4,500 FT</p></div>
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><p class="font-bold">8-10 HOURS</p></div>
+            </div>
+            <p class="mono-font text-sm text-gray-600 mb-3">Challenging extension from Cascade Pass with world-class alpine scenery. Not for beginners.</p>
+            <div class="bg-gray-100 p-3 rounded mb-4"><h4 class="mono-font text-xs font-bold text-gray-700 mb-1">CURRENT CONDITIONS:</h4><p class="mono-font text-xs text-gray-600">Snow and ice above 6,500 ft, full alpine gear required</p></div>
+            <a href="https://www.alltrails.com/trail/us/washington/sahale-arm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 punk-border bg-orange-500 text-black px-4 py-2 mono-font text-xs font-bold hover:bg-orange-400 transition-colors transform hover:rotate-1">VIEW ON ALLTRAILS <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></a>
+          </div>
+
+           <!-- Trail Card: MAPLE PASS LOOP -->
+          <div class="punk-border bg-white p-6 transform transition-all duration-200 hover:scale-105 rotate-1 hover:rotate-0">
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h3 class="zine-font text-xl mb-1 transform -rotate-1">MAPLE PASS LOOP</h3>
+                <div class="flex items-center gap-2 mb-2">
+                  <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <span class="mono-font text-xs font-bold">MODERATE</span>
+                </div>
+              </div>
+              <div class="punk-border px-3 py-1 bg-green-100 text-green-800 border-green-200">
+                <span class="mono-font text-xs font-bold">OPEN</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mb-4 mono-font text-xs">
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><p class="font-bold">7.2 MILES</p></div>
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><line x1="12" x2="12" y1="20" y2="4"/><polyline points="6 14 12 20 18 14"/></svg><p class="font-bold">2,150 FT</p></div>
+              <div class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-1 text-gray-500"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><p class="font-bold">5-6 HOURS</p></div>
+            </div>
+            <p class="mono-font text-sm text-gray-600 mb-3">Spectacular loop with fall colors and mountain views. Less crowded than other popular trails.</p>
+            <div class="bg-gray-100 p-3 rounded mb-4"><h4 class="mono-font text-xs font-bold text-gray-700 mb-1">CURRENT CONDITIONS:</h4><p class="mono-font text-xs text-gray-600">Trail dry, perfect conditions for hiking</p></div>
+            <a href="https://www.alltrails.com/trail/us/washington/maple-pass-loop-trail" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 punk-border bg-orange-500 text-black px-4 py-2 mono-font text-xs font-bold hover:bg-orange-400 transition-colors transform hover:rotate-1">VIEW ON ALLTRAILS <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg></a>
+          </div>
+
+        </div>
+
+        <!-- Safety Notice -->
+        <div class="mt-12 punk-border bg-red-600 text-white p-8 transform -rotate-1">
+          <div class="text-center">
+            <h3 class="zine-font text-2xl mb-4 text-yellow-300">MOUNTAIN SAFETY</h3>
+            <div class="grid md:grid-cols-2 gap-6 mono-font text-sm">
+              <div>
+                <h4 class="font-bold mb-2">ALWAYS BRING</h4>
+                <p>• Map & compass/GPS</p>
+                <p>• Extra food & water</p>
+                <p>• Rain gear & warm layers</p>
+                <p>• First aid kit</p>
+              </div>
+              <div>
+                <h4 class="font-bold mb-2">TELL SOMEONE</h4>
+                <p>• Your planned route</p>
+                <p>• Expected return time</p>
+                <p>• Emergency contact info</p>
+                <p>• Check in when you return</p>
+              </div>
+            </div>
+            <div class="mt-6 punk-border bg-yellow-300 text-black inline-block px-4 py-2 transform rotate-2">
+              <p class="font-bold">RESPECT THE MOUNTAIN • LEAVE NO TRACE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white border-t-4 border-orange-500 mt-12">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-6 text-center md:text-left">
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">HOURS</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>MON-FRI: 6AM-6PM</p>
+                        <p>SAT-SUN: 7AM-7PM</p>
+                        <p class="text-gray-400">CLOSED: MAJOR STORMS</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">LOCATION</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>123 GRANITE ROAD</p>
+                        <p>MARBLE BASIN, WA</p>
+                        <p class="text-gray-400">MILE 47 ON CASCADE HWY</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">VIBE</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>LOCAL • PUNK • CAFFEINATED</p>
+                        <p>TRAIL MAPS AVAILABLE</p>
+                        <p class="text-gray-400">EST. 2019</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-gray-600 text-center mono-font text-xs text-gray-400">
+                © 2024 ROC CAFE • FUELED BY MOUNTAINS & COFFEE
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

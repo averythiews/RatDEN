@@ -1,13 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Base44 APP</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROC CAFE | HOME</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker:wght@400&family=Courier+Prime:wght@400;700&display=swap');
+        .zine-font { font-family: 'Permanent Marker', cursive; }
+        .mono-font { font-family: 'Courier Prime', monospace; }
+        .punk-border { border: 3px solid #000; box-shadow: 4px 4px 0px #000; }
+        .zine-bg { background: linear-gradient(45deg, transparent 40%, rgba(0,0,0,0.1) 41%, rgba(0,0,0,0.1) 59%, transparent 60%), linear-gradient(-45deg, transparent 40%, rgba(0,0,0,0.05) 41%, rgba(0,0,0,0.05) 59%, transparent 60%); }
+        .nav-active { background-color: #F97316; color: #000; }
+        .nav-active-arrow { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #F97316; }
+    </style>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Header -->
+    <header class="relative border-b-4 border-black bg-white overflow-hidden">
+        <div class="absolute inset-0 zine-bg opacity-30"></div>
+        <div class="relative max-w-6xl mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <a href="Home.html" class="group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-black flex items-center justify-center transform rotate-3 group-hover:rotate-6 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+                        </div>
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold zine-font text-black transform -rotate-1">ROC CAFE</h1>
+                            <p class="text-sm mono-font text-gray-600 transform rotate-1">MARBLE BASIN • N. CASCADES</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="punk-border bg-yellow-300 px-3 py-1 transform rotate-2 hidden md:block">
+                    <p class="mono-font text-xs font-bold">COFFEE • TRAILS • COMMUNITY</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-black text-white sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center md:justify-start gap-0">
+                <a href="Index.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors nav-active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Home
+                    <div class="nav-active-arrow"></div>
+                </a>
+                <a href="Menu.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+                    Menu
+                </a>
+                <a href="Trails.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                    Trails
+                </a>
+                <a href="About.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    About
+                </a>
+                <a href="Contact.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="relative">
+      <section class="relative bg-black text-white overflow-hidden">
+        <div 
+          class="absolute inset-0 opacity-30"
+          style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop'); background-size: cover; background-position: center; filter: contrast(1.2) brightness(0.7)"
+        ></div>
+        
+        <div class="relative max-w-6xl mx-auto px-4 py-16 md:py-24">
+          <div class="max-w-3xl">
+            <div class="punk-border bg-red-600 inline-block px-3 py-1 mb-6 transform -rotate-2">
+              <span class="mono-font text-xs font-bold text-white">NORTHERN CASCADES</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-7xl font-bold zine-font mb-6 leading-tight">
+              <span class="block transform -rotate-1">COFFEE</span>
+              <span class="block transform rotate-1 text-orange-500">CULTURE</span>
+              <span class="block transform -rotate-1">CASCADES</span>
+            </h1>
+            
+            <div class="space-y-4 mb-8">
+              <p class="text-lg md:text-xl mono-font">
+                Where punk rock meets peak coffee in the heart of Marble Basin.
+              </p>
+              <p class="mono-font text-gray-300">
+                Locally roasted beans • Trail beta • Good vibes only
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+              <a 
+                href="Menu.html"
+                class="punk-border bg-orange-500 text-black px-6 py-3 mono-font font-bold hover:bg-orange-400 transition-colors transform hover:rotate-1"
+              >
+                CHECK MENU <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline"><line x1="5" x2="19" y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a 
+                href="Trails.html"
+                class="punk-border bg-white text-black px-6 py-3 mono-font font-bold hover:bg-gray-200 transition-colors transform hover:-rotate-1"
+              >
+                FIND TRAILS <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ... (Rest of the Home page content from your original app) ... -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white border-t-4 border-orange-500 mt-12">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-3 gap-6 text-center md:text-left">
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">HOURS</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>MON-FRI: 6AM-6PM</p>
+                        <p>SAT-SUN: 7AM-7PM</p>
+                        <p class="text-gray-400">CLOSED: MAJOR STORMS</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">LOCATION</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>123 GRANITE ROAD</p>
+                        <p>MARBLE BASIN, WA</p>
+                        <p class="text-gray-400">MILE 47 ON CASCADE HWY</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">VIBE</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>LOCAL • PUNK • CAFFEINATED</p>
+                        <p>TRAIL MAPS AVAILABLE</p>
+                        <p class="text-gray-400">EST. 2019</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-gray-600 text-center mono-font text-xs text-gray-400">
+                © 2024 ROC CAFE • FUELED BY MOUNTAINS & COFFEE
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
