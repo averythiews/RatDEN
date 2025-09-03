@@ -59,12 +59,12 @@ theMap=[
                                         commandLine:'[Root@57.3.55.8][GPI_Base]northCascades/entities/stephanieRichardson: ',
                                         upstream:[]
                                     },
-                                    {pageName:"Seraphina Bellweather",
+                                    {pageName:"seraphinaBellweather",
                                         content:"<p>Age: 25</p><p>Species: Therianthrope(Northern Spotted Owl)</p><p>Address: 19 Rinnfeld Road</p><p>Owner of the local occult shop Wytches and confirmed Wild Magic conductor.</p><p>Family history of occultism has provided the individual with a greater knowledge of the unknown than others within the town. She has only started to study Wild Magic in earnest after her infection with therianthropy and is not to be considered much of a threat if forced into engagement. Is the primary author of the 'Fictional' supernatural romance series called Crimson Crescent Fang so as to pass information to individuals outside of Marble Basin. AI censroship tools have been put in place to prevent anything potentially harmful from leaking. In terms of artistic value, Crimson Crescent Fang is mediocre at best and it is doubtful the work will have any lasting impact.</p>",
                                         commandLine:'[Root@57.3.55.8][GPI_Base]northCascades/entities/seraphinaBellweather: ',
                                         upstream:[]
                                     },
-                                    {pageName:"Greg 'The Rat' Kent",
+                                    {pageName:"gregKent",
                                         content:"<p>Age: 20</p><p>Species: RatRatRatRatRat</p><p>Address: He's In The Goddamn Walls</p><p>Fuck you guys, I am writing my own entry!</p><p>The Rat is easily one of the best hackers that is not currently owned by some bullshit corporation or government entity. The Rat works for whoever he wants, whenever he wants, and wherever her wants. Now that he is in the system, he's gonna crawl through your walls and take all your shit. Fuck with him or any of his buddies and a whole lot of radioactive documents are going to find themselves in very capable hands. In other words, I am the giant rat that makes all of the rules. Now let's see what kind of trouble we can get ourselves into.",
                                         commandLine:'[Root@57.3.55.8][GPI_Base]northCascades/entities/gregKent: ',
                                         upstream:[]
