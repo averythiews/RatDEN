@@ -55,7 +55,7 @@ theMap=[
                                         upstream:[]
                                     },
                                     {pageName:"stephanieRichardson",
-                                        content:"<p>Age: N/A</p><p>Species: Therianthrope(River Otter)</p><p>Address:185 Rinehart Way, Second Floor</p><p>Second confirmed user of IOI and confirmed Wild Mangic conductor.</p><p>Owner of the Roc Cafe and Coffee on the main street of Marblemount. According to records she is 38 years old but visual documentation of the woman has shown her to be far younger. It is theorized that the Wild Magic release may have affected her physical age. An epigentic clock would provide definitive results but a complete autopsy would help to explain how certain bones/ligiments react to the process of de-aging.</p>",
+                                        content:"<p>Age: N/A</p><p>Species: Therianthrope(River Otter)</p><p>Address:185 Rinehart Way, Second Floor</p><p>Second confirmed user of IOI and confirmed Wild Mangic conductor.</p><p>Owner of the Roc Cafe and Coffee on the main street of Marble Basin. According to records she is 38 years old but visual documentation of the woman has shown her to be far younger. It is theorized that the Wild Magic release may have affected her physical age. An epigentic clock would provide definitive results but a complete autopsy would help to explain how certain bones/ligiments react to the process of de-aging.</p>",
                                         commandLine:'[Root@57.3.55.8][GPI_Base]northCascades/entities/stephanieRichardson: ',
                                         upstream:[]
 
