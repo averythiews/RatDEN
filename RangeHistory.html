@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROC CAFE | RANGE HISTORY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker:wght@400&family=Courier+Prime:wght@400;700&display=swap');
+        .zine-font { font-family: 'Permanent Marker', cursive; }
+        .mono-font { font-family: 'Courier Prime', monospace; }
+        .punk-border { border: 3px solid #000; box-shadow: 4px 4px 0px #000; }
+        .zine-bg { background: linear-gradient(45deg, transparent 40%, rgba(0,0,0,0.1) 41%, rgba(0,0,0,0.1) 59%, transparent 60%), linear-gradient(-45deg, transparent 40%, rgba(0,0,0,0.05) 41%, rgba(0,0,0,0.05) 59%, transparent 60%); }
+        .nav-active { background-color: #F97316; color: #000; }
+        .nav-active-arrow { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #F97316; }
+        .dark-punk-border { border: 3px solid #374151; box-shadow: 4px 4px 0px #374151; }
+        .red-punk-border { border: 3px solid #7F1D1D; box-shadow: 4px 4px 0px #7F1D1D; }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-gray-300">
+    <!-- Header -->
+    <header class="relative border-b-4 border-black bg-white overflow-hidden">
+        <div class="absolute inset-0 zine-bg opacity-30"></div>
+        <div class="relative max-w-6xl mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <a href__="Home.html" class="group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-black flex items-center justify-center transform rotate-3 group-hover:rotate-6 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+                        </div>
+                        <div>
+                            <h1 class="text-3xl md:text-4xl font-bold zine-font text-black transform -rotate-1">ROC CAFE</h1>
+                            <p class="text-sm mono-font text-gray-600 transform rotate-1">MARBLE BASIN • N. CASCADES</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="punk-border bg-yellow-300 px-3 py-1 transform rotate-2 hidden md:block">
+                    <p class="mono-font text-xs font-bold" style="color: rgb(253 224 71 / var(--tw-bg-opacity, 1));">RIGHT • BELOW • YOU</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-black text-white sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center md:justify-start gap-0">
+                <a href="Index.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Home
+                </a>
+                <a href="Menu.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+                    Menu
+                </a>
+                <a href="Trails.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                    Trails
+                </a>
+                <a href="About.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 21-3-3m3 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+                    About
+                </a>
+                <a href="Contact.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Contact
+                </a>
+                <a href="RangeHistory.html" class="group relative px-4 py-3 mono-font font-bold text-sm flex items-center gap-2 transition-colors hover:bg-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.5 3 12l3 3.5M18 8.5 21 12l-3 3.5"/><path d="M8 12h8"/></svg>
+                    Range History
+                    <div class="nav-active-arrow"></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="py-12">
+        <div class="max-w-4xl mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <div class="red-punk-border bg-black inline-block px-4 py-2 mb-4 transform -rotate-2">
+                    <span class="mono-font text-sm font-bold text-red-500">CLASSIFIED</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl zine-font text-gray-100 mb-4 transform rotate-1">
+                    RANGE HISTORY
+                </h1>
+                <p class="mono-font text-gray-400 max-w-2xl mx-auto">
+                    The mountains are beautiful, but they keep secrets. Not all who wander are lost... some are taken.
+                </p>
+            </div>
+
+            <!-- Introduction -->
+            <div class="dark-punk-border bg-black p-6 mb-12 transform rotate-1">
+                <p class="mono-font text-sm text-gray-400 leading-relaxed">
+                Every peak has a shadow. For every breathtaking vista, there's a story that ends in silence. The official trail guides tell you about elevation and mileage. They don't tell you about the things you might see when you're alone, miles from any road, with the sun going down. This is the other history of the North Cascades. The one you're not supposed to know.
+                </p>
+            </div>
+
+            <!-- Case Files Section -->
+            <div class="mb-16">
+                <h2 class="zine-font text-2xl text-red-500 mb-8 text-center transform -rotate-1">UNSOLVED CASE FILES</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Case 1: The Vanishing of Agnes Frye -->
+                    <div class="dark-punk-border bg-gray-800 p-6 transform rotate-1 hover:bg-black transition-colors hover:rotate-0">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="mono-font font-bold text-gray-200">October 1978</h3>
+                        </div>
+                        <h4 class="zine-font text-xl text-gray-100 mb-2">The Vanishing of Agnes Frye</h4>
+                        <p class="mono-font text-sm text-gray-400">Experienced hiker vanished on a clear afternoon. Her camera was found a year later, the final photo a blurry image of the trail ahead, empty.</p>
+                    </div>
+
+                    <!-- Case 2: Diablo Dam Whispers -->
+                    <div class="dark-punk-border bg-gray-800 p-6 transform -rotate-1 hover:bg-black transition-colors hover:rotate-0">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="mono-font font-bold text-gray-200">Ongoing</h3>
+                        </div>
+                        <h4 class="zine-font text-xl text-gray-100 mb-2">Diablo Dam Whispers</h4>
+                        <p class="mono-font text-sm text-gray-400">Visitors report hearing faint, pleading whispers on the wind, even on calm days. Park rangers dismiss it as 'unusual acoustics from the spillway'.</p>
+                    </div>
+
+                    <!-- Case 3: The Silent Watcher -->
+                    <div class="dark-punk-border bg-gray-800 p-6 transform rotate-1 hover:bg-black transition-colors hover:rotate-0">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="mono-font font-bold text-gray-200">Multiple reports, 1962-present</h3>
+                        </div>
+                        <h4 class="zine-font text-xl text-gray-100 mb-2">The Silent Watcher of Thornton Lakes</h4>
+                        <p class="mono-font text-sm text-gray-400">A tall, gaunt figure reportedly seen standing motionless among the trees, just beyond the edge of vision. It never approaches, never retreats. It only watches.</p>
+                    </div>
+
+                    <!-- Case 4: Chatterbox Peak Anomaly -->
+                    <div class="dark-punk-border bg-gray-800 p-6 transform -rotate-1 hover:bg-black transition-colors hover:rotate-0">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="mono-font font-bold text-gray-200">Sporadic since 1991</h3>
+                        </div>
+                        <h4 class="zine-font text-xl text-gray-100 mb-2">The Chatterbox Peak Anomaly</h4>
+                        <p class="mono-font text-sm text-gray-400">Hikers report hearing sped-up, distorted radio chatter during storms, miles from any transmitter. No source has ever been identified.</p>
+                    </div>
+
+                    <!-- Case 5: Warm Campfire -->
+                    <div class="dark-punk-border bg-gray-800 p-6 transform rotate-1 hover:bg-black transition-colors hover:rotate-0">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="mono-font font-bold text-gray-200">September 1984</h3>
+                        </div>
+                        <h4 class="zine-font text-xl text-gray-100 mb-2">The Warm Campfire on Mount Despair</h4>
+                        <p class="mono-font text-sm text-gray-400">A team of three climbers was never seen again. Search parties found their basecamp intact, a pot of coffee still warm over a low flame.</p>
+                    </div>
+
+                    <!-- Case 6: The Reflection -->
+                    <div class="dark-punk-border bg-gray-800 p-6 transform -rotate-1 hover:bg-black transition-colors hover:rotate-0">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="mono-font font-bold text-gray-200">Ongoing</h3>
+                        </div>
+                        <h4 class="zine-font text-xl text-gray-100 mb-2">The Reflection in Heather Lake</h4>
+                        <p class="mono-font text-sm text-gray-400">Lone hikers claim their reflection in the still water is not their own—sometimes older, sometimes just wrong. A trick of the light, they say.</p>
+                    </div>
+
+                    <!-- Case 7: Cascade Shapeshifters -->
+                    <div class="dark-punk-border bg-gray-800 p-6 transform rotate-1 hover:bg-black transition-colors hover:rotate-0">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="mono-font font-bold text-gray-200">Multiple reports, 1970-present</h3>
+                        </div>
+                        <h4 class="zine-font text-xl text-gray-100 mb-2">The Cascade Shapeshifters</h4>
+                        <p class="mono-font text-sm text-gray-400">Therianthrope sightings documented by rangers but never officially recorded. Witnesses describe human figures transforming into large predators at twilight. All accounts share eerily similar details.</p>
+                    </div>
+
+                    <!-- Case 8: Lightning Strike Survivors -->
+                    <div class="dark-punk-border bg-gray-800 p-6 transform -rotate-1 hover:bg-black transition-colors hover:rotate-0">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="mono-font font-bold text-gray-200">August 1995</h3>
+                        </div>
+                        <h4 class="zine-font text-xl text-gray-100 mb-2">The Lightning Strike Survivors</h4>
+                        <p class="mono-font text-sm text-gray-400">Three climbers struck by lightning during clear weather. They returned speaking in unison, claiming they 'saw what's beneath.' All three disappeared within a month of their rescue.</p>
+                    </div>
+
+                    <!-- Case 9: Perfect Photographs -->
+                    <div class="dark-punk-border bg-gray-800 p-6 transform rotate-1 hover:bg-black transition-colors hover:rotate-0">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="mono-font font-bold text-gray-200">July 2001</h3>
+                        </div>
+                        <h4 class="zine-font text-xl text-gray-100 mb-2">The Perfect Photographs</h4>
+                        <p class="mono-font text-sm text-gray-400">Tourist's digital camera contained 47 photos of the same location, taken over 6 hours. Each image identical except for a progressively closer dark figure. The tourist has no memory of taking them.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Lost Ballads Section -->
+            <div class="red-punk-border bg-black p-8 transform">
+                <div class="flex items-center gap-4 mb-6">
+                    <div>
+                        <h2 class="zine-font text-2xl text-red-500">The Ballad of the Cascades</h2>
+                        <p class="mono-font text-sm text-gray-400">A song commissioned in 1979 to promote the park. It was never released.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 dark-punk-border">
+                    <p class="mono-font text-gray-300 italic text-sm leading-loose whitespace-pre-line">
+                        The peaks are white, the woods are deep,
+                        A lovely place to fall asleep.
+                        Come see the lake, so cold and blue,
+                        And let the mountains swallow you.
+
+                        The trail is long, the path is steep,
+                        Promises the forest keeps.
+                        Don't turn around, don't be afraid,
+                        A perfect, final campsite's made.
+
+                        So pack your gear and say goodbye,
+                        Beneath a cold and empty sky.
+                        Come to the Cascades, dark and grand,
+                        And never leave this lonely land.</p>
+                </div>
+                <p class="mono-font text-xs text-center mt-4 text-gray-500">
+                    (Project terminated. All copies of the recording were ordered destroyed. This transcription survives from a sound engineer's recovered notes.)
+                </p>
+            </div>
+
+            <br>
+
+            <div class="red-punk-border bg-black p-8 transform">
+                <div class="flex items-center gap-4 mb-6">
+                    <div>
+                        <h2 class="zine-font text-2xl text-red-500">The Wild Takes Back</h2>
+                        <p class="mono-font text-sm text-gray-400">In 1980, without any prompting from the National Parks Service, the singer of the original ballad walked into a recording studio to record one more song regarding the wilds surrounding North Cascades. A copy of the song on vinyl was eventually found within an abandoned campsite on the Three Fools Trail.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4 mb-6">
+                    <audio controls>
+                        <source src="src\The Wild Takes Back.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+                
+                <div class="bg-gray-800 p-6 dark-punk-border">
+                    <p class="mono-font text-gray-300 italic text-sm leading-loose whitespace-pre-line">
+                        Oh the peaks rise high
+                        Where the Skagit runs clear
+                        Where the air feels light
+                        And the sky draws near
+                        A land untouched
+                        A paradise made
+                        Come walk with me
+                        Through the forest's shade
+
+                        In the North Cascades
+                        Where the wild winds sing
+                        A cradle of life in the mountain's ring
+                        Where the sun rides high
+                        And the valleys run so low
+                        Into the Cascades that's where we'll go
+
+                        Where the moss grows thick
+                        On the cabins wood
+                        And fallen timbers call
+                        To reclaim what once stood
+                        The roots run deep
+                        Like the years have flown
+                        The forest whispers
+                        You are not alone
+
+                        In the North Cascades
+                        Where the wild winds sing
+                        A cradle of life in the mountain's ring
+                        Where the sun rides high
+                        And the valleys run so low
+                        Into the woods that's where we'll go
+
+                        The hawk rides the sky
+                        The stream hums below
+                        A rhythm of time
+                        Only nature can know
+                        The paths we carved
+                        Fade like morning dew
+                        The earth reminds us
+                        It will outlast you
+
+                        In the North Cascades
+                        Where the wild winds sing
+                        A cradle of life in the mountain's ring
+                        But hush now listen
+                        There's a voice way down below.
+                        The wild will take you back
+                        To make you its own
+                    </p>
+                </div>
+                <p class="mono-font text-xs text-center mt-4 text-gray-500">
+                    (Song digitized and remastered by The Long Dead Bard)
+                </p>
+            </div>
+
+            <!-- Final Warning -->
+            <div class="mt-16 text-center">
+                <div class="punk-border bg-yellow-300 text-black inline-block px-6 py-4 transform rotate-2">
+                    <h3 class="zine-font text-xl mb-2">REMEMBER THE STORIES</h3>
+                    <p class="mono-font text-sm">
+                        Enjoy the trails. But if you hear a branch snap behind you... don't look.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white border-t-4 border-orange-500 mt-12">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="grid md:grid-cols-4 gap-6 text-center md:text-left">
+              <a href="ratDINApp\RatDen.html"><img class="mb-2" style="height: 90px;margin: auto; margin-top: 10px;" src="src\RatDEN.PNG" alt="RatDEN"></a>
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">HOURS</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>MON-FRI: 6AM-6PM</p>
+                        <p>SAT-SUN: 7AM-7PM</p>
+                        <p class="text-gray-400">CLOSED: MAJOR STORMS</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">LOCATION</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>123 GRANITE ROAD</p>
+                        <p>MARBLE BASIN, WA</p>
+                        <p class="text-gray-400">MILE 47 ON CASCADE HWY</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="zine-font text-lg mb-2 text-orange-500">VIBE</h3>
+                    <div class="mono-font text-sm space-y-1">
+                        <p>LOCAL • PUNK • CAFFEINATED</p>
+                        <p>TRAIL MAPS AVAILABLE</p>
+                        <p class="text-gray-400">EST. 2019</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-gray-600 text-center mono-font text-xs text-gray-400">
+                © 2024 ROC CAFE • FUELED BY MOUNTAINS & COFFEE
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
