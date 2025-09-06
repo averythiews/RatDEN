@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>RATOS Terminal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+        
+        .vt323-regular {
+            font-family: "VT323";
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000;
+            color: #22c55e;
+            font-size: larger;
+            min-height: 100vh;
+            padding: 2em;
+            display: flex;
+            justify-content: center;
+        }
+
+        body p {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .result li:nth-child(odd) {
+            -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+            color: white;
+        }
+
+        .result::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .result::-webkit-scrollbar-thumb {
+            background: white;
+            border-radius: 10px;
+        }
+        
+        .terminal-container {
+            width: 100%;
+            max-width: 80rem;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .terminal {
+            height: 60vh;
+            background-color: #000;
+            border: 2px solid rgba(34, 197, 94, 0.5);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            overflow-y: auto;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+        }
+
+        .terminal li.ready {
+            -webkit-animation: none;
+            animation: none;
+            font-style: italic;
+            margin-top: -0.5em;
+            margin-bottom: 0.5em;
+            transform: none;
+            opacity: 0.5;
+        }
+        
+        .input-container {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .prompt {
+            color: #ef4444;
+        }
+        
+        .command {
+            flex: 1;
+            background-color: #000;
+            color: #22c55e;
+            border: 1px solid rgba(34, 197, 94, 0.5);
+            border-radius: 0.25rem;
+            padding: 0.25rem 0.5rem;
+            font-family: 'Courier Prime', monospace;
+            outline: none;
+        }
+        
+        .command:focus {
+            border-color: #22c55e;
+        }
+
+        .command-input {
+            flex: 1;
+            background-color: #000;
+            color: #22c55e;
+            border: 1px solid rgba(34, 197, 94, 0.5);
+            border-radius: 0.25rem;
+            padding: 0.25rem 0.5rem;
+            outline: none;
+        }
+        
+        .command-input:focus {
+            border-color: #22c55e;
+        }
+
+        .input-container {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .return-link {
+            margin-top: 1rem;
+            text-align: center;
+        }
+        
+        .return-link a {
+            color: #6b7280;
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.3s;
+        }
+        
+        .return-link a:hover {
+            color: #ef4444;
+        }
+        
+        .blinking-cursor {
+            animation: blink 1s step-end infinite;
+        }
+        
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        
+        .command-text {
+            color: #eab308;
+        }
+        
+        .alert-text {
+            color: #dc2626;
+            font-weight: bold;
+        }
+        
+        .response-text {
+            color: #22c55e;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 0.5rem;
+            }
+            .terminal {
+                height: 70vh;
+            }
+        }
+
+        #error {
+            color: red;
+        }
+
+        #movement {
+            color: orange;
+        }
+
+        .path {
+            color: yellow;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0.5rem;
+            }
+            .terminal {
+                height: 70vh;
+            }
+        }
+    </style>
+</head>
+<body class="vt323-regular">
+    <div class="terminal-container">
+        <div id="terminal" class="terminal">
+            <ul class="result">
+                <p>Welcome to...</p>
+                <pre>
+                ██████╗  █████╗ ████████╗ ██████╗ ███████╗
+                ██╔══██╗██╔══██╗╚══██╔══╝██╔═══██╗██╔════╝
+                ██████╔╝███████║   ██║   ██║   ██║███████╗
+                ██╔══██╗██╔══██║   ██║   ██║   ██║╚════██║
+                ██║  ██║██║  ██║   ██║   ╚██████╔╝███████║
+                ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝
+                </pre>
+                <p>"Rogue Autonomous Terminal Operating System"</p>
+                <p>All activity is monitored. All data is permanent.</p>
+                <p>You can thank me later</p>
+            </ul>
+
+        </div>
+        
+        <div class="input-container">
+            <span class="prompt">&gt;</span>
+
+                <label for="command-input"></label>
+                <input id="command-input" type="text" class="command" autocomplete="off" placeholder=""/>
+
+        </div>
+        
+        <div class="return-link">
+            <a href="Index.html">-- RETURN TO SAFETY --</a>
+        </div>
+    </div>
+
+    <script src="src\CLI.js"></script>
+
+</body>
+</html>

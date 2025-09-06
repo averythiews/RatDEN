@@ -106,9 +106,9 @@ var currentLocation=theMap[0]
 var previousLocations=[]
 
 
-
 // set var and return input value
 function getInput() {
+    console.log
     command = commandInput.value;
     return command;
   }
@@ -190,7 +190,8 @@ function getInput() {
   
   // scroll to bottom...
   function scrollToBottom() {
-    result.scrollTop = result.scrollHeight;
+    console.log(terminal.scrollTop)
+    terminal.scrollTop = terminal.scrollHeight;
   }
   
   // run all functions on enter (see event listener below)
@@ -200,7 +201,6 @@ function getInput() {
       returnResponse();
       scrollToBottom();
     }
-    
     commandInput.value = ''; // clear input value 
   }
   
@@ -208,10 +208,11 @@ function getInput() {
   var commandInput = document.getElementById('command-input'),
       result = document.querySelector('.result'),
       command = '',
-      path = '[Root@Localhost~]Within_The_Rat_Den: ';
-  
-  // whenever you press a key
-  commandInput.addEventListener('keydown',function(e){
+      path = '[Root@Localhost~]Within_The_Rat_Den: ',
+      terminal = document.querySelector('.terminal');
+
+// whenever you press a key
+commandInput.addEventListener('keydown',function(e){
     if(e.keyCode === 13) doTheThing(); // enter key
     if(e.keyCode === 38) repeatInput(); // up key
-  });
+});
