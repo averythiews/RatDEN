@@ -17,12 +17,12 @@ theMap=[
                                 commandLine:'[Admin@7.3.55.8][GPI_Base]northCascades/entities: ',
                                 upstream:[
                                     {pageName:"theRootedOne",
-                                        content:"<br><p>The Rooted One of the North Cascades is an ancient and enigmatic force of nature that embodies decay, rot, and the relentless march of natural entropy. It is considered an elder entity, wielding a mysterious and formidable power that remains largely unknown to those who study or confront it. This entity appears to have the extraordinary ability to generate new life forms from the organic detritus that accumulates within its domain, turning said matter into creatures that then serve its inscrutable purposes. These emergent beings are often unpredictable and dangerous, capable of venturing beyond The Rooted One's immediate boundaries to inflict chaos upon nearby human settlements. Their origins from the decayed landscape make them inherently hostile and difficult to control, posing a significant threat to civilian populations and infrastructure. The creatures' ability to escape The Rooted One's influence underscores the need for vigilant monitoring and strategic containment.</p>",
+                                        content:"<br><p>The Rooted One of the North Cascades is an ancient and enigmatic force of nature that embodies decay, rot, and the relentless march of natural entropy. It is considered an elder entity, wielding a power whose depth remains largely unknown. This entity is capable of psychic communication/infection and appears to have the ability to generate new life forms from the organic detritus that accumulates within its domain. These emergent beings are often unpredictable and dangerous, capable of venturing beyond The Rooted One's immediate boundaries to inflict chaos upon nearby human settlements; especially Marble Basin.</p><p>Vigilant monitoring and scientific study are highly recommended at this time.</p>",
                                         commandLine:'[Admin@7.3.55.8][GPI_Base]northCascades/entities/theRootedOne: ',
                                         upstream:[
                                             {pageName:"containment",
-                                                content:"<br><p>These emergent beings are often unpredictable and dangerous, capable of venturing beyond The Rooted One's immediate boundaries to inflict chaos upon nearby human settlements. Their origins from the decayed landscape make them inherently hostile and difficult to control, posing a significant threat to civilian populations and infrastructure. The creatures' ability to escape The Rooted One's influence underscores the need for vigilant monitoring and strategic containment.</p>",
-                                                commandLine:'[Admin@7.3.55.8][GPI_Base]northCascades/entities/theRootedOne/containment: ',
+                                                content:"<br>The Rooted One has proven itself to be a rather simple entity to contain due to its deep connection to the North Cascades and its slow rate of growth. The rate of its spread is well within acceptable parameters. The creatures that it creates, however, have proven themselves more challenging to contain/eliminate, though the local therianthropic clan/cult/coven has proven effective at culling the entities as they crop up. If total containment were necessary, a wildfire could be an effective means to halt any progress made in the past decades.</p><div id='rooted'><p>You cling to life, to hope, to fleeting moments of beauty</p><p>I offer the truth beneath your illusions</p><p>Nothing lasts. Nothing can be held.</p></div>",
+                                                commandLine:'[ROOT@7.3.55.8][GPI_Base]northCascades/entities/theRootedOne/containment: ',
                                                 upstream:[]
                                             },
                                             {pageName:"communication",
@@ -89,16 +89,16 @@ theMap=[
             },
             {pageName:"gregThoughts",
                 content:"<p>You are currently viewing the very ratty thoughts of the one and only Greg\nI'm an open book, baby. I don't mind.</p>",
-                commandLine:"[Root@Localhost~]Within_The_Rat_Den/gregThoughts: ",
+                commandLine:"[Rat@Localhost~]Within_The_Rat_Den/gregThoughts: ",
                 upstream:[
                     {pageName:'theGPI',
                         content:"<br><p>Who the Hell are these guys? They look like park rangers but Markus has no idea who any of them are. They won't even communicate with the guy and their security is INSANE. We are talking AES with a 256bit key levels of encryption. I'll break this shit wide open though. Rats can get into anything.</p><p>Finally! Paydirt! We are into the GPI and have access to a large portion of their files that cover the immediate Marble Basin area. Some files, like those created the rest of the pack and me, are hidden but can be entered so long as you understand the way in which these people label stuff. To test yourself out, try searching for my file.</p><p>Hint: My name is Greg Kent</p>",
-                        commandLine:"[Localhost~]Within_The_Rat_Den/gregThoughts/theGPI: ",
+                        commandLine:"[Rat@Localhost~]Within_The_Rat_Den/gregThoughts/theGPI: ",
                         upstream:[]
                     },
                     {pageName:'theWebsite',
                         content:"<br><p>Something strange is happening to the website.</p><p>When I go online to check how the servers/securities are holding up, I sometimes find that there are changes being made that are not of my own doing. Just the other day, Steph found references to her brother on the site, including some sort of audio that she had never heard before. She nearly beat the shit out of me thinking that I had set it all up as some kind of prank but I would never do that. I may be a Rat, but I am not a fucking asshole... Usually.</p><p>Anyway, so I went back into the HTML and tried to remove the reference but it came back every single time. The text is distorting but it's still easy to read using one of those 'descrambler' things online. Not sure if this is just some asshole from the GPI striking back at us for digging into their business or if that thing in the forest has found some way to connect to the server. Going to find out though.</p>",
-                        commandLine:"[Localhost~]Within_The_Rat_Den/gregThoughts/theGPI: ",
+                        commandLine:"[Rat@Localhost~]Within_The_Rat_Den/gregThoughts/theGPI: ",
                         upstream:[]
                     }
                 ]
